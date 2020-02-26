@@ -16,7 +16,7 @@ public class Employe {
 	
 	public double calculSalaire() {
 		
-		return 1200 + (20 * this.anciennete);  
+		return 1500 + (20 * this.anciennete);  
 		
 	}
 	

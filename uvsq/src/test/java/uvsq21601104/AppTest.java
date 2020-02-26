@@ -23,7 +23,7 @@ public class AppTest
     	
     	Employe e = new Employe("Toto", "totoland", 10);
     	
-    	assertEquals(1400, e.calculSalaire(), 0);
+    	assertEquals(1700, e.calculSalaire(), 0);
     	
     	
     }
@@ -32,7 +32,7 @@ public class AppTest
     public void testVendeur() {
     	
     	Vendeur v = new Vendeur("Toto", "totoland", 10, 100);
-    	assertEquals(1500, v.calculSalaire(), 0);
+    	assertEquals(1800, v.calculSalaire(), 0);
     	
     }
     
@@ -51,8 +51,20 @@ public class AppTest
     		res += tmp.calculSalaire();
     		
     	}
-    	assertEquals(2900, res, 0);
+    	assertEquals(3500, res, 0);
     }
     
+    
+    @Test
+    public void testManagerCalcul() {
+    	
+    	Manager m = new Manager("Bidule", "Somewhere", 10);
+    	Vendeur v = new Vendeur("Toto", "totoland", 10, 100);
+    	Employe e = new Employe("Toto", "totoland", 10);
+    	m.AddEmploye(e);
+    	m.AddEmploye(v);
+    	assertEquals(1900, m.calculSalaire(), 0);
+    	
+    }
     
 }
