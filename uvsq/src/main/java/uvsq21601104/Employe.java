@@ -2,9 +2,9 @@ package uvsq21601104;
 
 public class Employe {
 
-	private final String nom;
-	private final String adresse;
-	private final int anciennete;
+	protected final String nom;
+	protected final String adresse;
+	protected final int anciennete;
 	
 	public Employe(String nom, String adresse, int anciennete) {
 		
