@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Manager extends Employe {
 
-	private List <Employe> l; 
+	private List<Employe> l; 
 	
-	public Manager(String nom, String adresse, int anciennete ) {
+	public Manager(String nom, String adresse, int anciennete) {
 		
 		super(nom, adresse, anciennete);
 		l = new ArrayList<Employe>();
